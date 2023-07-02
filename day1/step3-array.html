@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        // var arr = new Array(5);
+        var arr = [];
+        arr[0] = "i am  batman";
+        arr[2] = "i am  aquaman";
+        arr[6] = "i am  superman";
+        arr[1] = 100;
+        arr[5] = [1,2,3,4,5];
+       /*  
+        console.log(arr[1] * 100);
+        console.log(arr);
+        console.log(arr[10]);
+        console.log( 5 * arr[5][1] ); 
+        */
+
+        var avengers = ["Ironman", "Hulk", "Thor", "Black Widow"];
+        // console.log(avengers.join("~"));
+
+       
+        var arr1 = [100, 2, 900, 1, 700];
+
+        // console.log(arr1.sort());
+        
+        function sortfun(val1, val2){
+            if(val1 < val2){
+                return -1
+            }else if(val1 > val2){
+                return 1
+            }else{
+                return 0
+            }
+        }
+        console.log(arr1.sort(sortfun));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

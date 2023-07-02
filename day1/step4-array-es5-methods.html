@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var favnums = [18,50,25,24,45,63,13,6,99,3,77,100,1,2,14,72,49];
+        /*     
+            for(var i = 0; i < favnums.length; i++){
+                console.log(favnums[i]);
+            }
+        */
+       /* 
+       for(var i = 0; i < favnums.length; i++){
+           console.log(favnums[i]);
+       } 
+       */
+     /*       
+      function callback(val,idx,arr){
+        console.log(val, idx, arr);
+      }
+      favnums.forEach(callback);
+      doubleFavNums.forEach(callback); 
+     */
+     /* 
+     for(var i = 0; i < favnums.length; i++){
+         doubleFavNums.push(favnums[i] * 2);
+     };
+     console.log(favnums);
+     console.log(doubleFavNums); 
+     */
+   /*  
+    var doubleFavNums = favnums.map(function(val, idx, arr){
+        return val * 2;
+    });
+    console.log(favnums);
+    console.log(doubleFavNums);  
+    */
+
+    /*     
+    console.log( favnums.every(function(val, idx, arr){
+        return val < 10;
+    })); 
+    */
+    console.log( favnums.some(function(val, idx, arr){
+        console.log(val);
+        return val < 10;
+    }));
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
