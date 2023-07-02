@@ -1,0 +1,19 @@
+Mithril Emmet
+v0.7.7
+FallenMax
+========================
+open in browser
+v2.0.0
+TechER
+========================
+Live Server
+v5.7.9
+Ritwick Dey
+========================
+Prettier - Code formatter
+v9.19.0
+Prettier
+========================
+vscode-icons
+v12.4.0
+VSCode Icons Team
