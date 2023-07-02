@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var favnums = [18,50,25,24,45,63,13,6,99,3,77,100,1,2,14,72,49,100];
+         // Filter
+         /*
+         var listOf_GT50 = favnums.filter(function(val,idx,arr){
+             return val > 50;
+         });
+            
+        console.log( listOf_GT50.sort() );
+        */
+
+        // Reduce
+        // reduce(callback_function(init_val,val,idx,arr), initial value);
+        var initval = 0;
+       /*  
+        var total = favnums.reduce(function(init_val,val,idx,arr){
+            console.log(val);
+            return init_val + val;
+        },initval); 
+        */
+        /* 
+        var total = favnums.reduceRight(function(init_val,val,idx,arr){
+            console.log(val);
+            return init_val + val;
+        },initval); 
+        */
+
+        // console.log(total);
+        // console.log( favnums.lastIndexOf(100) );
+        /*      
+        var loc = favnums.indexOf(100);
+        console.log( favnums.indexOf(100,loc+1) ); 
+        */
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
