@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Improvement</title>
+    <script>
+        /* 
+        function adder(val1, val2){
+            return val1 + val2;
+        }; 
+        */
+       // default parameters
+        /* function adder(val1 = 0, val2 = 0){
+            return val1 + val2;
+        }; */
+        // 
+        /* console.log(adder(5)); */
+
+        // 
+        /* function adder(){
+           //  return arguments.length;
+           var total = 0;
+           for(var i = 0; i < arguments.length; i++){
+            total += arguments[i];
+           };
+
+           return total;
+        }; */
+        /* 
+        function adder(...nums){
+           var total = 0;
+           for(var i = 0; i < nums.length; i++){
+            total += nums[i];
+           };
+
+           return total;
+        }; 
+        */
+       /*  function adder(...nums){
+            var total =  nums.reduce(function(initVal,val){
+                return initVal + val;
+            },0);
+           return total;
+        };  */
+
+         
+       /* REST Arguments
+        function adder(...nums){
+            return  nums.reduce(function(initVal,val){
+                return initVal + val;
+            },0);
+        }; 
+        console.log(adder(5));
+        console.log(adder(5,6));
+        console.log(adder(5,6,7));
+        console.log(adder(5,6,7,8));
+        console.log(adder(5,6,7,8,9)); 
+        */
+        function adder(...nums){
+            return  nums.reduce(function(initVal,val){
+                return initVal + val;
+            },0);
+        }; 
+        var args = [5,6,7,8,9,10,11];
+        // console.log(adder(args[0], args[1], args[2], args[3], args[4], args[5] ));
+        // spread syntax
+        console.log(adder(...args));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

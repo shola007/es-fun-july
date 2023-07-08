@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+    <script>
+        function addPower(power){
+            return function(message){
+                return message+" "+power + power;
+            };
+        };
+        // console.log( addPower(5) );
+        var showPower = addPower(5);
+        console.log( showPower("i have the power ") )// function
+        console.log( showPower("my power is ") )// function
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

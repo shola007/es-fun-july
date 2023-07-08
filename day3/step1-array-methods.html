@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Usage of array methods</title>
+    <script>
+        var justiceleague = [
+            { title : "Wonder Women", firstname : "Princess", lastname : "Diana", power : 8 },
+            { title : "Batman", firstname : "Bruce", lastname : "Wayne", power : 7 },
+            { title : "Flash", firstname : "Barry", lastname : "Allen", power : 6 },
+            { title : "Superman", firstname : "Clark", lastname : "Kent", power : 9 }
+        ];
+
+        // get a list of heroes titles whose power is more than 7;
+        // filter
+        // map
+
+        /*
+        var powergreaterthan7 = justiceleague.filter(function(val, idx, arr){
+            return val.power > 7;
+        });
+        
+        console.log( powergreaterthan7 );
+        
+        var greatheroes = powergreaterthan7.map( function(val, idx, arr){
+            return val.title;
+        });
+        
+        console.log(greatheroes);
+        */
+
+        var greatheroes = justiceleague
+        .filter( function(val, idx, arr){
+            return val.power > 7;
+        } )
+        .map( function(val, idx, arr){
+            return val.title.toUpperCase();
+        } );
+        
+        console.log(greatheroes);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

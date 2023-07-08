@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var avengers = [
+            { title: "Ironman", firstname: "tony", lastname: "stark", fullname: function () { return this.firstname + " " + this.lastname }, city: "New York", power: 7 }
+        ]
+
+        function checkPower() {
+            if (avengers[0].power > 6) {
+                console.log("hi");
+                // var temptitle = hero.title; // Hoisting
+                // let temptitle = hero.title; // TDZ
+                let temptitle = avengers[0].title; // TDZ
+                console.log(temptitle);
+                return temptitle + " is ready to fight";
+            }
+            // console.log("in line 49 ",temptitle)// ??? 
+        };
+        checkPower();
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

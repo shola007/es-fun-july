@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+        let hero = {
+                title: "Batman",
+                firstname: "Bruce",
+                lastname: "Wayne",
+                power: 7
+        };
+        /* 
+        window.onload = function(){
+            var temphero = hero;
+            temphero.power = 10;
+            document.getElementsByClassName("box")[0].innerHTML = "<div><h1>"+temphero.title+"</h1> <h2> "+temphero.firstname+" "+temphero.lastname+"</h2> <h3>Power is "+temphero.power+"</h3> </div>"
+            document.getElementsByClassName("box")[1].innerHTML = "<div><h1>"+hero.title+"</h1> <h2> "+hero.firstname+" "+hero.lastname+"</h2> <h3>Power is "+hero.power+"</h3> </div>"
+        } 
+        */
+        /* 
+        var herotitle = hero.title;
+        var herofirstname = hero.firstname;
+        var herolastname = hero.lastname;
+        var heropower = hero.power;
+         */
+        /* 
+        var herotitle = hero.title, 
+            herofirstname = hero.firstname, 
+            herolastname = hero.lastname,
+            heropower = hero.power; */
+        
+            
+        // var { title : herotitle , firstname : herofirstname, lastname : herolastname, power : heropower } = hero;
+        // var { title : title , firstname : firstname, lastname : lastname, power : power } = hero;
+        var { title , firstname, lastname, power } = hero;
+
+        window.onload = function(){
+            power = 10;
+            document.getElementsByClassName("box")[0].innerHTML = "<div><h1>"+title+"</h1> <h2> "+firstname+" "+lastname+"</h2> <h3>Power is "+power+"</h3> </div>"
+            document.getElementsByClassName("box")[1].innerHTML = "<div><h1>"+hero.title+"</h1> <h2> "+hero.firstname+" "+hero.lastname+"</h2> <h3>Power is "+hero.power+"</h3> </div>"
+        } 
+    </script>
+</head>
+<body>
+    <div class="box">1</div>
+    <hr>
+    <div class="box">1</div>
+</body>
+</html>

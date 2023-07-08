@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var justiceleague = [
+            {
+                title: "Wonder Women",
+                firstname: "Princess",
+                lastname: "Diana",
+                power: 8,
+                fullname: function () {
+                    return this.firstname + " " + this.lastname;
+                }
+            },
+            {
+                title: "Batman",
+                firstname: "Bruce",
+                lastname: "Wayne",
+                power: 7,
+                fullname: function () {
+                    return this.firstname + " " + this.lastname;
+                }
+            },
+            {
+                title: "Flash",
+                firstname: "Barry",
+                lastname: "Allen",
+                power: 6,
+                fullname: function () {
+                    return this.firstname + " " + this.lastname;
+                }
+            },
+            {
+                title: "Superman",
+                firstname: "Clark",
+                lastname: "Kent",
+                power: 9,
+                fullname: function () {
+                    console.log( this ); // ???
+                    return this.firstname + " " + this.lastname;
+                }
+            }
+        ];
+
+
+        console.log( justiceleague[0].title ); // property
+        console.log( justiceleague[0].fullname() ); // method
+        console.log( justiceleague[3].fullname() ); // method
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

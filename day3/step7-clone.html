@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+        let hero = {
+                title: "Batman",
+                firstname: "Bruce",
+                lastname: "Wayne",
+                power: 7
+        };
+        // console.log(JSON.stringify(hero).length);
+        // console.log(JSON.parse(JSON.stringify(hero)));
+        var temphero = JSON.parse( JSON.stringify(hero) )
+        // var temphero = {...hero}; // spread operator syntax
+        console.log(temphero);
+        window.onload = function(){
+            document.getElementsByClassName("box")[0].innerHTML = "<div><h1>"+temphero.title+"</h1> <h2> "+temphero.firstname+" "+temphero.lastname+"</h2> <h3>Power is "+temphero.power+"</h3> </div>"
+            document.getElementsByClassName("box")[1].innerHTML = "<div><h1>"+hero.title+"</h1> <h2> "+hero.firstname+" "+hero.lastname+"</h2> <h3>Power is "+hero.power+"</h3> </div>"
+        } 
+    </script>
+</head>
+<body>
+    <div class="box">1</div>
+    <hr>
+    <div class="box">1</div>
+</body>
+</html>
